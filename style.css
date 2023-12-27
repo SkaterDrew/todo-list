@@ -3,12 +3,13 @@ body {
   background-color: #121212;
   color: #FFFFFF;
   padding: 8px;
+  font-size: 30px;
 }
 
 .coolTitle {
   text-align: center;
   font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   transform: skewY(-7deg);
   letter-spacing: 4px;
   word-spacing: -8px;
@@ -27,6 +28,7 @@ body {
 
 #userinput {
   border-radius: 5px;
+  z-index: 1;
 }
 
 #enter {
@@ -44,7 +46,7 @@ ul {
 
 .list-item {
   display: grid;
-  grid-template-columns: minmax(auto,500px) 70px;
+  grid-template-columns: minmax(auto,500px) 5em;
   column-gap: 0.1em;
   align-items: center;
   height: 1.3em;
@@ -53,7 +55,7 @@ ul {
 .item-text {
   display: grid;
   align-items: center;
-  grid-template-columns: 23px 1fr;
+  grid-template-columns: 1.7em 1fr;
   text-align: left;
   background-color:#FFFFFF;
   border: 0;
@@ -72,6 +74,10 @@ ul {
   border-radius: 5px;
   background-color: #D11A2A;
   font-weight: bold;
+}
+
+.txt {
+  font-size: 30px;
 }
 
 .done {
