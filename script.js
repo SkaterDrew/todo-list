@@ -42,11 +42,11 @@ function createEventDelete(a) {
 function createListElement() {
 	//add list element
 	var li = document.createElement("li");
-	li.classList.add("list-item");
+	li.classList.add("list-item", "txt");
 
 	//add item with empty circle
 	var newItem = document.createElement("button");
-	newItem.classList.add("item-text")
+	newItem.classList.add("item-text", "txt")
 	newItem.setAttribute("id","item-index-"+i);
 	var img = document.createElement("img");
 	img.src = "img/not_done.png";
@@ -57,7 +57,7 @@ function createListElement() {
 
 	//add delete button
 	var del = document.createElement("button");
-	del.classList.add("delete");
+	del.classList.add("delete", "txt");
 	del.appendChild(document.createTextNode("Delete"));
 	li.appendChild(del);
 
